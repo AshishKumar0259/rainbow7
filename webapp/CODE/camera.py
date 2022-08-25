@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from keras.models import load_model
 
-model = load_model('D:\GitHub_Projects\SmartCameraDetection\web\CODE\dataset.h5')
+model = load_model('D:\GitHub_Projects\SmartCameraDetection\web\webapp\CODE\dataset.h5')
 
 
 faceDetect=cv2.CascadeClassifier(cv2.data.haarcascades +'haarcascade_frontalface_default.xml')
