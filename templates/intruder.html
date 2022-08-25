@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>False Alarm System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+
+</head>
+
+
+<body>
+<div class="main" >
+
+
+    <h1 style="color:#ffffff; text-align: center;padding-top: 20px;padding-bottom: 20px;">Human Detection </h1>
+    <img src="{{ url_for('video') }}" style="display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;">
+<button type="button" style="background-color: #ff7200;
+  border: none;
+  color: white;
+  padding:10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top:10px;
+  margin-bottom:10px;
+  text-decoration: none;
+  display:block;
+  font-size: 16px;"> <a href="{{url_for('mainpage')}}" style="Text-decoration:none;color:#ffffff;"> Main Page </a> </button>
+</div>
+
+<div>
+
+</div>
+
+<!-- /*-------------------------- Footer Section -----------------------------------------------*/ -->
+
+<!--<footer class="footer">
+    <div class="max-width">
+        Created by
+        <span>
+                <a href="https://www.linkedin.com/in/vivek-kumar-singh-7b6184190/" target="_blank">Rainbow 7</a></span>
+        | &copy; 2022 All right reserved
+    </div>
+</footer>-->
+
+
+</body>
+
+</html>
+

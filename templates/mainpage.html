@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>False Alarm System - Main Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/mainpage.css') }}">
+</head>
+<body>
+    <div class="wrapper">
+
+        <!--<a style="text-decoration: none;
+    color: #fff;
+    font-size: medium;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    margin-left: 30px;
+    margin-top: 27px;
+    font-size: 14px;" href="{{ url_for('index')}}">HOME</a>-->
+        <h1> MAIN PAGE </h1>
+        
+        <div class="logout">
+            <a href="{{ url_for('index')}}" class="btn"> Log Out</a>
+        </div>
+        
+        <div class="container">
+            
+            <div class="box">
+              <img src="https://firebasestorage.googleapis.com/v0/b/falsealarm-ed19d.appspot.com/o/webImages%2FNewface.jpg?alt=media&token=bb5c842c-b52c-4598-b506-e1776e1a4c84">
+              <H3>CREATE NEW PERSON DATABASE</H3>  
+              <p> Create dataset for new person/soldier.</p>
+              <a href="#" class="btn"> Click Here</a>
+            </div>
+
+            <div class="box">
+                <img src="https://firebasestorage.googleapis.com/v0/b/falsealarm-ed19d.appspot.com/o/webImages%2Fstream.jpg?alt=media&token=36241b6d-146d-4d84-b381-5e1b43ed3114">
+                <H3>WATCH LIVE CAMERA STREAM</H3>  
+                <p> Watch live camera stream for visual monitoring. </p>
+                <a href="{{ url_for('camera')}}" class="btn"> Click Here</a>
+            </div>
+
+            <div class="box">
+                <img src="https://firebasestorage.googleapis.com/v0/b/falsealarm-ed19d.appspot.com/o/webImages%2Fmodel.jpg?alt=media&token=986c5d2d-16d9-4258-b7e0-7ebc7bf0955e">
+                <H3>TRAIN/UPDATE MODEL</H3>  
+                <p>Train model to add new classes of label-Person.</p>
+                <a href="#" class="btn"> Click Here</a>
+            </div>
+
+            <div class="box">
+                <img src="https://firebasestorage.googleapis.com/v0/b/falsealarm-ed19d.appspot.com/o/webImages%2FPrediction.jpg?alt=media&token=906e86f5-d33a-4f3f-8c0f-475aec2b9ab9">
+                <H3>Human Detection</H3>
+                <p>Test Model For Human Detection</p>
+                <a href="{{ url_for('intruder')}}" class="btn"> Click Here</a>
+            </div>
+
+            <div class="box">
+                <img src="https://firebasestorage.googleapis.com/v0/b/falsealarm-ed19d.appspot.com/o/webImages%2Fdatabase.jpg?alt=media&token=94b94213-5c5f-4d75-88e5-9cbdab806ce2">
+                <H3>AVAILABLE DATABASE OF KNOWN PEOPLE</H3>  
+                <p>List out available labels of person.</p>
+                <a href="#" class="btn"> Click Here</a>
+            </div>
+
+            <div class="box">
+                <img src="https://firebasestorage.googleapis.com/v0/b/falsealarm-ed19d.appspot.com/o/webImages%2Fcamera.png?alt=media&token=34a07384-3451-420b-b8ef-163c1b10a1aa">
+                <H3>Face Recognition</H3>
+                <p>Test Model For Face Recogition</p>
+                <a href="#" class="btn"> Click Here</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
